@@ -14,7 +14,7 @@
 ;problem record
 (defrecord filesys [existing needed])
 
-(def file (.split #"\n" (slurp "/Users/jbeaumon/code/clojure/filefixit/src/filefixit/fixit.in")))
+(def file (.split #"\n" (slurp "fixit.in")))
 (def numTests (Integer/parseInt (first file)))
 (def tests (rest file))
 (def a (take-last 34 tests))
